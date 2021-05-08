@@ -1,9 +1,208 @@
 <html>
 	<head>
 		<title>Carson Faatz - About me</title>
-		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
+  		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8" crossorigin="anonymous"></script>
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+
+		<style>
+			.sidebar{
+				margin: 0;
+				display: inline-block;
+				height: 100%;
+				position: fixed;
+				top:0;
+				left:0;
+				background-color:#212529!important;
+			}
+
+			.sidebar-header{
+				font-size: 1.4em;
+				font-weight: bold;
+			}
+
+			.ul-left{
+				text-align: left;
+				margin-left: 10%;
+				font-size: 1.2em;
+			}
+
+			.cf-subsec{
+				margin-top: 0 !important;
+				margin-bottom: 1rem !important;
+			}
+
+			.cf-hero{
+				margin-bottom: 1rem !important;
+			}
+
+			.btn-group{
+				margin-top: 0.5em;
+			}
+
+			.github{
+				color: white;
+				font-size: 1.4em;
+				position: fixed;
+				bottom: 10px;
+				left: 10px;
+			}
+		</style>
 	</head>
-	<body>
-		h
+	<body id="top">
+
+		<div class="container-fluid" style="height:100%;">
+
+			<div class="row" style="height:100%;">
+
+				<!-- Sidebar nav -->
+				<nav class="col-md-2  sidebar">
+
+					<div class="sidebar-sticky">
+						<a href="#top" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-white text-decoration-none">
+							<span class="fs-4 sidebar-header">Carson Faatz</span>
+						</a>
+						<br/>
+						<ul class="nav flex-column">
+							<li class="nav-item">
+								<a href="#bio" class="nav-link active text-white"><i class="fas fa-scroll"></i> Biography</a>
+							</li>
+
+							<li class="nav-item">
+								<a href="#projects" class="nav-link text-white"><i class="fas fa-project-diagram"></i> Projects</a>
+							</li>
+						</ul>
+
+						<a href="https://github.com/Tudedude" class="fw-bold github">
+							<i class="fab fa-github-square"></i> <span class="github-txt">GitHub</span>
+						</a>
+
+					</div>
+				</nav>
+
+
+				<main class="col-md-9 ml-sm-auto col-lg-10 px-4" style="overflow-y:scroll;">
+					<div class="d-flex flex-column">
+						<div class="px-4 py-5 my-5 text-center cf-hero">
+							<img class="d-block mx-auto mb-4 avatar" src="./cars1.png" width="160" height="160" alt="avatar" />
+							<h1 class="display-5 fw-bold">Carson Faatz</h1>
+						</div>
+					</div>
+
+					<div class="d-flex flex-column">
+
+						<div class="px-4 py-5 my-5 text-center cf-subsec">
+							<h3 class="display-5 fw-bold" id="bio">Biography</h3>
+
+							I am a 20 year-old computer science student, living in the dense forests of northern California. I have been programming since I was 10 years old, and have a diverse range of experience and interests. I began my journey when my father, a web developer, began teaching me basic HTML and CSS. Quickly I became enamored with the experience of creating my own digital projects, and avidly learned fundamental XHTML, CSS, and JavaScript. Then, my enjoyment of games led me to Java, where I learned to create modifications, server plugins, and more for the popular game Minecraft. Since then, I have worked in a variety of languages including:<br/>
+							<ul class="ul-left">
+								<li>
+									HTML
+								</li><li>
+									CSS
+								</li><li>
+									JavaScript
+								</li><li>
+									Java
+								</li><li>
+									PHP
+								</li><li>
+									JSON
+								</li><li>
+									XML
+								</li><li>
+									YAML
+								</li>
+							</ul>
+							I have also utilized technologies including:
+							<ul class="ul-left">
+								<li>
+									MySQL
+								</li><li>
+									NGINX
+								</li><li>
+									Apache
+								</li><li>
+									React
+								</li><li>
+									Android SDK
+								</li>
+							</ul>
+						</div>
+
+
+
+						<div class="px-4 py-5 my-5 text-center cf-subsec">
+							<h3 class="display-5 fw-bold" id="projects">Projects</h3>
+
+							<div class="container">
+
+								<div class="row">
+									<div class="col-md-6">
+
+										<div class="card mb-6 shadow-sm">
+											<img class="card-img-top" src="ordinance.png" style="height:100%"/>
+											<div class="card-body">
+												<div class="card-text">
+													<h4 class="fw-bold">Ordinance Removal</h4>
+													A React-based version of the classic game Minesweeper with responsive design.
+												</div>
+												<div class="d-flex justify-content-between align-items-center">
+													<div class="btn-group">
+														<a href="https://github.com/Tudedude/OrdinanceRemoval">
+															<button type="button" class="btn btn-sm btn-outline-secondary">
+																Source Code
+															</button>
+														</a>
+														<a href="https://tudedude.me/games/minesweeper/">
+															<button type="button" class="btn btn-sm btn-outline-secondary">
+																Visit
+															</button>
+														</a>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="col-md-6">
+
+										<div class="card mb-6 shadow-sm">
+											<img class="card-img-top" src="frost.png" style="height:100%"/>
+											<div class="card-body">
+												<div class="card-text">
+													<h4 class="fw-bold">Frost Portal</h4>
+													A clean, minimalist landing page for Minecraft servers and networks, with navigation links.
+												</div>
+												<div class="d-flex justify-content-between align-items-center">
+													<div class="btn-group">
+														<a href="https://github.com/Tudedude/FrostPortal">
+															<button type="button" class="btn btn-sm btn-outline-secondary">
+																Source Code
+															</button>
+														</a>
+														<a href="https://tudedude.me/demos/frostPortal/">
+															<button type="button" class="btn btn-sm btn-outline-secondary">
+																Visit
+															</button>
+														</a>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+
+							</div>
+
+						</div>
+
+					</div>
+
+				</main>
+			</div>
+
+		</div>
+
 	</body>
 </html>
